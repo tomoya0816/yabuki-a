@@ -1,0 +1,125 @@
+
+/*   サイドバーの説明    */
+.menu {
+	position: fixed;
+	top: 60px;
+	right: 0px;
+	z-index: 100;
+}
+
+label {
+	display: block;
+	width: 80px;
+}
+
+input[type="checkbox"].on-off{
+	display: none;
+}
+
+.menu ul {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+    height: 500px;
+}
+
+
+.menu img {
+    width: 100%;
+}
+
+
+
+/*  スライドショー　　*/
+
+#stage {
+    position: relative;
+    width: 80%;
+    height:900px;
+    margin: 0 auto;
+}
+#image002,#image003,#image004,#image002,#image003 {
+    position: absolute;
+    width: 80%;
+    height: 900px;
+}
+#image002 img,#image003 img,#image004 img,#image002 img,#image003 img {
+    opacity:0; 
+    -moz-animation: imgTrans 20s infinite;
+    -webkit-animation: imgTrans 20s infinite;
+    animation: imgTrans 20s infinite;
+}
+#image002 img {
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+#image003 img {
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+#image004 img {
+    -moz-animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+}
+#image002 img{
+    -moz-animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+}
+#image003 img {
+    -moz-animation-delay: 16s;
+    -webkit-animation-delay: 16s;
+    animation-delay: 16s;
+}
+#frame {
+    width: 80%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+@-webkit-keyframes imgTrans {
+ 0% { opacity:0; }
+ 7% { opacity:1; }
+ 18% { opacity:1; }
+ 25% { opacity:0; } 
+ 100% { opacity:0; }
+}
+@-moz-keyframes imgTrans {
+ 0% { opacity:0; }
+ 7% { opacity:1; }
+ 18% { opacity:1; }
+ 25% { opacity:0; } 
+ 100% { opacity:0; }
+}
+@keyframes imgTrans {
+ 0% { opacity:0; }
+ 7% { opacity:1; }
+ 18% { opacity:1; }
+ 25% { opacity:0; } 
+ 100% { opacity:0; }
+}
+
+
+
+
+

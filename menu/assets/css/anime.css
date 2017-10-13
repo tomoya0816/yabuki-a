@@ -1,0 +1,129 @@
+/*  その他もろもろ  */
+
+/*線の種類（実線） 太さ 色*/
+
+
+
+
+
+
+
+/*   サイドバーの説明    */
+.menu {
+	position: fixed;
+	top: 30px;
+	right: 0px;
+	z-index: 100;
+}
+
+label {
+	display: block;
+	width: 45px;
+}
+
+input[type="checkbox"].on-off{
+	display: none;
+}
+
+.menu ul {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+input[type="checkbox"].on-off + ul{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+    height: 500px;
+}
+
+
+.menu img {
+    width: 100%;
+}
+
+
+
+/*  スライドショー　　*/
+
+#stage {
+position: relative;
+max-width:950px;
+margin: 0 auto;
+background:#ddd;
+}
+.pic {
+position: absolute;
+}
+.pic img {
+width: 100%;
+height: auto;
+opacity:0;
+-moz-animation: imgTrans 25s infinite;
+-webkit-animation: imgTrans 25s ease-in infinite;
+animation: imgTrans 25s infinite;
+
+}
+#image002 img {
+-moz-animation-delay: 0s;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+#image003 img {
+-moz-animation-delay: 5s;
+-webkit-animation-delay: 5s;
+animation-delay: 5s;
+}
+#image004 img {
+-moz-animation-delay: 10s;
+-webkit-animation-delay:10s;
+animation-delay: 10s;
+}
+#image008 img{
+-moz-animation-delay: 15s;
+-webkit-animation-delay: 15s;
+animation-delay: 15s;
+}
+#image009 img {
+-moz-animation-delay: 20s;
+-webkit-animation-delay: 20s;
+animation-delay: 20s;
+}
+@-webkit-keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+18% { opacity:1; }
+25% { opacity:0; }
+100% { opacity:0; }
+}
+@-moz-keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+18% { opacity:1; }
+25% { opacity:0; }
+100% { opacity:0; }
+}
+@keyframes imgTrans {
+0% { opacity:0; }
+7% { opacity:1; }
+18% { opacity:1; }
+25% { opacity:0; }
+100% { opacity:0; }
+}
+
+
+
+
+
